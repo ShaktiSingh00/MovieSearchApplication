@@ -11,7 +11,7 @@ var AppView = Backbone.View.extend({
         this.detailView = new MovieDetailView();
 
         this.listenTo(this.collection, 'reset', this.renderResults);
-        Backbone.on('movie:show', this.fetchMovieDetails);
+       // Backbone.on('movie:show', this.fetchMovieDetails);
     },
 
     onSearch: function(e) {
